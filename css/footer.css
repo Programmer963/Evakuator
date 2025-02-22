@@ -6,7 +6,8 @@ footer {
 /* Big footer */
 .big-footer {
     height: 100%;
-    background-image: url(../img/footer-background.png);
+    /* background-image: url(../img/footer-background.png); */
+    background-color: #0d6c68;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

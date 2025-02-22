@@ -489,8 +489,10 @@ ul {
 }
 
 .content-about img {
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    border: 1px solid #0D6B68;
+    /* border: 1px solid #0D6B68; */
 }
 
 .content-about-text {
