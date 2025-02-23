@@ -182,7 +182,7 @@ ul {
 
 .about-us {
     width: 100%;
-    padding: 100px 0 50px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,7 +291,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 85px 0 100px;
+    padding: 105px 0 80px;
     margin: auto;
     text-align: center;
 }
@@ -391,7 +391,7 @@ ul {
 
 @media screen and (max-width: 768px) {
     .services-card {
-        min-width: 70%;
+        min-width: 80%;
         padding: clamp(15px, 4vw ,25px);
     }
     .services-card a {
@@ -408,11 +408,11 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 90px 0;
+    padding: 100px 0 90px;
     background-color: #F3F3F3;
     position: relative;
 }
+
 .swiper-reviews {
     min-width: 60%;
     max-width: 70%;
@@ -678,7 +678,7 @@ ul {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(13,107,104, 0.7);
 }
-.contact-link img {
+.contact-icon {
     width: 40px;
     height: 40px;
 }

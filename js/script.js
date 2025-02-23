@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
+// Удаление картинок
 document.addEventListener("DOMContentLoaded", function () {
     function updateProjects() {
         let limit = window.innerWidth <= 540 ? 6 : window.innerWidth <= 968 ? 9 : Infinity;
