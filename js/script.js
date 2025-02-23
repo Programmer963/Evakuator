@@ -40,6 +40,7 @@ let selectors = [
     '.main-block-content',
     '.about-us-image',
     '.about-us-text',
+    '.par-bottom',
     '.swiper-slide',
     '.services-card',
     '.portfolio-project',
@@ -82,32 +83,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Получаем все изображения в портфолио
-    const images = document.querySelectorAll('.project-image');
-    const modal = document.getElementById('imageModal');
-    const modalImage = document.getElementById('modalImage');
-    const captionText = document.getElementById('caption');
-    const closeBtn = document.getElementById('closeModal');
-    
-    // Открытие модального окна при клике на картинку
-    images.forEach(img => {
-        img.addEventListener('click', () => {
-            modal.style.display = 'flex';
-            modalImage.src = img.src; // Устанавливаем изображение в модальном окне
-            captionText.textContent = img.alt; // Устанавливаем описание (если есть)
+document.addEventListener("DOMContentLoaded", function () {
+    function updateProjects() {
+        let limit = window.innerWidth <= 540 ? 6 : window.innerWidth <= 968 ? 9 : Infinity;
+
+        document.querySelectorAll(".portfolio-project").forEach((el, index) => {
+            el.style.display = index >= limit ? "none" : "block";
         });
-    });
+    }
 
-    // Закрытие модального окна
-    closeBtn.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
-    // Закрытие модального окна при клике вне области изображения
-    window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
+    updateProjects();
+    window.addEventListener("resize", updateProjects);
 });
