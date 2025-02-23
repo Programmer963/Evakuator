@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}  
 body {
     font-family: 'Montserrat', sans-serif;
     color: #232323;
@@ -40,7 +42,7 @@ ul {
 .main-block {
     position: relative;
     height: 100vh;
-    background-color: rgba(13, 108, 104, 0.7);
+    background-color: rgba(13, 108, 104, 1);
 }
 .main-block img {
     width: 100%;
@@ -184,7 +186,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    z-index: 1000;
+    z-index: 99;
 }
   
 .contact-buttons a {
@@ -219,7 +221,7 @@ ul {
 }
 
 .contact-buttons-icon {
-    width: clamp(25px,4vw, 30px);
+    width: clamp(20px,4vw, 30px);
 }
 
 
@@ -668,13 +670,9 @@ ul {
 }
 @media screen and (max-width: 540px) {
     .portfolio-projects {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    .portfolio-projects {
-        width: 70%;
-    }
-
 }
 
 
@@ -688,7 +686,7 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 150px 0;
+    padding: 100px 0;
 }
 .contact-container {
     width: 100%;
