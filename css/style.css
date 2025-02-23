@@ -291,7 +291,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 85px 0 150px;
+    padding: 85px 0 100px;
     margin: auto;
     text-align: center;
 }
@@ -672,23 +672,15 @@ ul {
     color: #fff;
     padding: 20px;
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 .contact-link:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(13,107,104, 0.7);
 }
-.contact-link i {
-    font-size: 20px;
-    background-color: #fff;
-    color: #0D6B68;
-    border-radius: 50%;
+.contact-link img {
     width: 40px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
-    vertical-align: middle;
 }
 .fa-whatsapp {
     font-size: 30px;
@@ -698,6 +690,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    position: relative;
 }
 .contact-link-text h4 {
     font-size: clamp(18px, 4vw, 24px);
@@ -713,11 +706,6 @@ ul {
     }
     .contact-link {
         padding: 15px;
-    }
-    .contact-link i {
-        font-size: 25px;
-        width: 50px;
-        height: 50px;
     }
 }
 
