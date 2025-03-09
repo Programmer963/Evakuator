@@ -221,7 +221,7 @@ ul {
 }
 
 .contact-buttons-icon {
-    width: clamp(20px,4vw, 30px);
+    width: clamp(20px, 4vw, 30px);
 }
 
 
@@ -251,7 +251,7 @@ ul {
     object-fit: cover;
 }
 .about-us-image.show-animation {
-    animation: flipInX 3s;
+    animation: flipInX 2s ease;
     opacity: 1;
 }
 
@@ -262,7 +262,7 @@ ul {
     flex-direction: column;
     opacity: 0.8;
     transform: translateY(20px);
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 .about-us-text.show-animation {
     opacity: 1;
@@ -280,7 +280,7 @@ ul {
     display: none;
     opacity: 0.8;
     transform: translateY(20px);
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 .par-bottom.show-animation {
     opacity: 1;
@@ -369,7 +369,7 @@ ul {
     border-radius: 20px;
     opacity: 0;
     transform: scale(0.8);
-    transition: all 1.4s ease;
+    transition: all 1.4s ease-out;
 }
 .services-card h2 {
     font-size: clamp(18px, 4vw, 22px);
@@ -381,13 +381,12 @@ ul {
     transform: scale(1);
 }
 .services-card:nth-child(1) {
-    transition-delay: 0.5s;
 }
 .services-card:nth-child(2) {
-    transition-delay: 1s;
+    transition-delay: 0.4s;
 }
 .services-card:nth-child(3) {
-    transition-delay: 1.5s;
+    transition-delay: 0.8s;
 }
 
 .services-card img {
@@ -435,6 +434,14 @@ ul {
     color: #fff;
 }
 
+@media screen and (max-width: 1625px) {
+    .services-card.services-card:nth-child(1),
+    .services-card.services-card:nth-child(2),
+    .services-card.services-card:nth-child(3)
+    {
+        transition-delay: 0.3s;
+    }    
+}
 
 @media screen and (max-width: 768px) {
     .services-card {
@@ -645,7 +652,7 @@ ul {
 }
 .portfolio-project.show-animation {
     opacity: 1;
-    animation: flipInX 3s ease;
+    animation: flipInX 2s ease;
 }
 .portfolio-project img {
     width: 100%;
@@ -761,20 +768,20 @@ ul {
 
 @keyframes flipInX {
     from {
-      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 30deg);
       animation-timing-function: ease-in;
       opacity: 0;
     }
     40% {
-      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -10deg);
       animation-timing-function: ease-in;
     }
     60% {
-      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 5deg);
       opacity: 1;
     }
     80% {
-      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -2deg);
     }
     to {
       opacity: 1;
